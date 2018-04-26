@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/margin_from_wall_8dp"
+        android:paddingStart="@dimen/margin_from_wall_8dp"
+        android:text="Post"
+        android:textSize="@dimen/text_size_17sp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_from_wall_2dp">
+
+
+            <braille.kofefe.app.modules_.common_util_.SquareRoundCornerImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_from_wall_8dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/user_50" />
+
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/circleImageView"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@+id/circleImageView"
+                android:layout_toLeftOf="@+id/txt_time"
+                android:layout_toStartOf="@+id/txt_time"
+                android:clickable="true"
+                android:singleLine="true"
+                android:text="Alex Smith"
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/margin_from_wall_8dp"
+                android:layout_marginRight="@dimen/margin_from_wall_8dp"
+                android:layout_marginTop="8dp"
+                android:singleLine="true"
+                android:text="35 min ago"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name"
+                android:layout_marginEnd="@dimen/margin_from_wall_8dp"
+                android:layout_marginRight="@dimen/margin_from_wall_8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/circleImageView"
+                android:fontFamily="serif"
+                android:text="this is dummy text is shown to demonstrate test will be shown here whether it is scrambled or un scrambled."
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size_13sp" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1pt"
+        android:layout_marginEnd="@dimen/margin_from_wall_8dp"
+        android:layout_marginLeft="@dimen/margin_from_wall_8dp"
+        android:layout_marginRight="@dimen/margin_from_wall_8dp"
+        android:layout_marginStart="@dimen/margin_from_wall_8dp"
+        android:background="@color/gray_little_dark" />
+
+</LinearLayout>

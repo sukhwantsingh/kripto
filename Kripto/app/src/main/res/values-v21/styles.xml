@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+    </style>
+    <style name="MyTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/color_transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/color_transparent</item>
+        <item name="android:bottomDark">@color/color_transparent</item>
+        <item name="android:bottomMedium">@color/color_transparent</item>
+        <item name="android:centerBright">@color/color_transparent</item>
+        <item name="android:centerDark">@color/color_transparent</item>
+        <item name="android:centerMedium">@color/color_transparent</item>
+        <item name="android:fullBright">@color/color_transparent</item>
+        <item name="android:fullDark">@color/color_transparent</item>
+        <item name="android:topBright">@color/color_transparent</item>
+        <item name="android:topDark">@color/color_transparent</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+
+    <!-- Animation for dialog box -->
+    <style name="DialogSlideAnim" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/color_white</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+</resources>

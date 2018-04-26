@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_from_wall_16dp"
+        android:gravity="center"
+        android:text="Create your Kofefe Profile!"
+        android:textColor="@color/color_black_less"
+        android:textSize="@dimen/text_size_17sp" />
+
+    <braille.kofefe.app.modules_.common_util_.SquareRoundCornerImageView
+        android:id="@+id/img_profile_buisness"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_from_wall_24dp"
+        android:elevation="@dimen/elevation_button"
+        android:scaleType="fitXY"
+        android:src="@color/color_invite_image" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/floating_button_image_select"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textInputLayout"
+        android:layout_alignEnd="@+id/img_profile_buisness"
+        android:layout_alignRight="@+id/img_profile_buisness"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:src="@mipmap/plus_white_36" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_profile_buisness"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="@dimen/margin_from_wall_16dp">
+
+        <EditText
+            android:id="@+id/edt_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="@string/alphabets_only"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:maxLength="64"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="@string/username_entry"
+            android:hint="Username"
+            android:inputType="text"
+            android:maxLength="32"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- <android.support.design.widget.TextInputLayout
+         android:id="@+id/textInputLayout22"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/textInputLayout_username"
+         android:layout_centerHorizontal="true"
+         android:layout_marginLeft="40dp"
+         android:layout_marginRight="40dp">
+
+         <EditText
+             android:id="@+id/edt_profile_email"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Email"
+             android:inputType="textEmailAddress" />
+     </android.support.design.widget.TextInputLayout>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayout_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <EditText
+            android:id="@+id/edt_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:inputType="textPostalAddress"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <EditText
+            android:id="@+id/edt_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:hint="Bio"
+            android:inputType="text"
+            android:maxLength="100"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/text_label_social_profiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/text_input_layout_3"
+        android:layout_alignLeft="@+id/text_input_layout_3"
+        android:layout_alignRight="@+id/text_input_layout_3"
+        android:layout_alignStart="@+id/text_input_layout_3"
+        android:layout_below="@+id/text_input_layout_3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_from_wall_24dp"
+        android:gravity="left"
+        android:text="Link your social profiles:"
+        android:textColor="@color/color_black_less"
+        android:textSize="@dimen/text_size_17sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/text_input_layout_3"
+        android:layout_alignLeft="@+id/text_input_layout_3"
+        android:layout_alignRight="@+id/text_input_layout_3"
+        android:layout_alignStart="@+id/text_input_layout_3"
+        android:layout_below="@+id/text_label_social_profiles"
+        android:layout_marginTop="@dimen/margin_from_wall_8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:id="@+id/face_book"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/textView2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:drawablePadding="10sp"
+                android:src="@drawable/fb_icn"
+                android:text="Facebook"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <ImageView
+                android:id="@+id/switch_facebook"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_from_wall_4dp"
+                android:gravity="end"
+                android:src="@mipmap/question_mark"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/face_twitter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/textView21"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:drawablePadding="10sp"
+                android:src="@drawable/twitter_icn"
+                android:text="Facebook"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <ImageView
+                android:id="@+id/switch_twitter"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_from_wall_4dp"
+                android:gravity="end"
+                android:src="@mipmap/question_mark"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/face_instagram"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_instagram"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:drawablePadding="10sp"
+                android:src="@drawable/insta_icn"
+                android:text=""
+                android:textSize="@dimen/text_size_15sp" />
+
+            <ImageView
+                android:id="@+id/switch_instagram"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_from_wall_4dp"
+                android:gravity="end"
+                android:src="@mipmap/question_mark"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/face_snapchat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_snapchat"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:drawablePadding="10sp"
+                android:src="@drawable/snapchat_icn"
+                android:text="Facebook"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <ImageView
+                android:id="@+id/switch_snapchat"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_from_wall_4dp"
+                android:gravity="end"
+                android:src="@mipmap/question_mark"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_get_started"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/text_input_layout_3"
+        android:layout_alignLeft="@+id/text_input_layout_3"
+        android:layout_alignRight="@+id/text_input_layout_3"
+        android:layout_alignStart="@+id/text_input_layout_3"
+        android:layout_below="@+id/linear_social"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        android:elevation="@dimen/elevation_button"
+        android:text="Get Started!"
+        android:textAllCaps="false"
+        android:textColor="@color/color_white" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_from_wall_32dp"
+        android:layout_below="@+id/btn_get_started" />
+
+
+</RelativeLayout>

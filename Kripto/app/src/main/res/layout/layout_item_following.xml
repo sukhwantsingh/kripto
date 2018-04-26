@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:id="@+id/rel_users_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="@dimen/margin_from_wall_8dp"
+            android:layout_marginLeft="@dimen/margin_from_wall_8dp"
+            android:layout_marginRight="@dimen/margin_from_wall_8dp"
+            android:layout_toLeftOf="@+id/btn_follow"
+            android:layout_toStartOf="@+id/btn_follow">
+
+            <LinearLayout
+                android:id="@+id/linear_users_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_from_wall_4dp"
+                android:layout_marginTop="@dimen/margin_from_wall_4dp"
+                android:background="@color/color_white"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <braille.kofefe.app.modules_.common_util_.SquareRoundCornerImageView
+                    android:id="@+id/circleImageView2"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center|top"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/user_75" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/margin_from_wall_2dp"
+                    android:layout_marginStart="@dimen/margin_from_wall_2dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_from_wall_8dp"
+                        android:layout_marginStart="@dimen/margin_from_wall_8dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/partial_black"
+                        android:textSize="@dimen/text_size_13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_from_wall_8dp"
+                        android:layout_marginStart="@dimen/margin_from_wall_8dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/gray_d"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <TextView
+                        android:id="@+id/txt_joined"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_from_wall_8dp"
+                        android:layout_marginStart="@dimen/margin_from_wall_8dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/partial_black"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <TextView
+                        android:id="@+id/txt_userProfesion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_from_wall_8dp"
+                        android:layout_marginStart="@dimen/margin_from_wall_8dp"
+                        android:drawableLeft="@mipmap/loc_16"
+                        android:drawablePadding="2sp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/partial_black"
+                        android:textSize="@dimen/text_size_13sp" />
+
+
+                    <TextView
+                        android:id="@+id/txt_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_from_wall_8dp"
+                        android:layout_marginStart="@dimen/margin_from_wall_8dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/partial_black"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_follow"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="@dimen/text_size_11sp"
+            android:background="@drawable/rel_btn"
+            android:elevation="@dimen/elevation_button"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_5sp"
+            android:paddingRight="@dimen/padding_5sp"
+            android:text=""
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginEnd="@dimen/margin_from_wall_8dp"
+        android:layout_marginLeft="@dimen/margin_from_wall_8dp"
+        android:background="@color/gray_little_dark" />
+</LinearLayout>

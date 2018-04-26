@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_focused="true" android:state_pressed="false"
+         android:drawable="@drawable/stroke_blue_gradiant" />
+
+    <item android:state_focused="true" android:state_pressed="true"
+        android:drawable="@drawable/stroke_blue_clicked" />
+
+    <item android:state_focused="false" android:state_pressed="true"
+        android:drawable="@drawable/stroke_blue_clicked" />
+
+    <item android:drawable="@drawable/stroke_blue_gradiant" />
+
+</selector>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_from_wall_8dp">8dp</dimen>
+    <dimen name="margin_from_wall_16dp">16dp</dimen>
+    <dimen name="margin_from_wall_24dp">24dp</dimen>
+    <dimen name="margin_from_wall_32dp">32dp</dimen>
+    <dimen name="margin_from_wall_4dp">4dp</dimen>
+    <dimen name="margin_from_wall_2dp">2dp</dimen>
+
+    <dimen name="elevation_toolbar">6dp</dimen>
+    <dimen name="elevation_button">6dp</dimen>
+    <dimen name="elevation_text_relationship">2dp</dimen>
+
+    <dimen name="text_size_15sp">15sp</dimen>
+    <dimen name="text_size_17sp">17sp</dimen>
+    <dimen name="text_size_13sp">13sp</dimen>
+    <dimen name="text_size_11sp">11sp</dimen>
+    <dimen name="text_size_9sp">9sp</dimen>
+
+    <dimen name="icon_image_size">70dp</dimen>
+    <dimen name="app_bar_height">220dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">15sp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+    <dimen name="margin_from_wall_12dp">12dp</dimen>
+    <dimen name="padding_5sp">5sp</dimen>
+
+    <dimen name="label_width">56dp</dimen>
+    <dimen name="label_height">24dp</dimen>
+
+
+</resources>

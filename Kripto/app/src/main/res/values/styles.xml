@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+
+    </style>
+
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base" />
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/app_color</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/app_color</item>
+    </style>
+
+
+    <style name="MyTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/color_transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/color_transparent</item>
+        <item name="android:bottomDark">@color/color_transparent</item>
+        <item name="android:bottomMedium">@color/color_transparent</item>
+        <item name="android:centerBright">@color/color_transparent</item>
+        <item name="android:centerDark">@color/color_transparent</item>
+        <item name="android:centerMedium">@color/color_transparent</item>
+        <item name="android:fullBright">@color/color_transparent</item>
+        <item name="android:fullDark">@color/color_transparent</item>
+        <item name="android:topBright">@color/color_transparent</item>
+        <item name="android:topDark">@color/color_transparent</item>
+    </style>
+
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+
+    <!-- Animation for dialog box -->
+    <style name="DialogSlideAnim" parent="@android:style/ThemeOverlay.Material.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+
+
+
+    <style name="AppTheme.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay"
+        parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/medium_gray</item>
+        <item name="android:colorBackground">@color/medium_gray</item>
+    </style>
+
+    <style name="PopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+
+
+
+
+
+
+
+
+
+</resources>

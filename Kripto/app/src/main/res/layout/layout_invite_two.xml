@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:gravity="center"
+        android:text="Check if your phone number is eligible to register. If you are eligible, a verification\nSMS will be automatically sent. "
+        android:textColor="@color/color_black_less"
+        android:textSize="@dimen/text_size_17sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_from_wall_16dp"
+        android:gravity="center"
+        android:padding="@dimen/margin_from_wall_8dp"
+        android:text="Note: Standard message or data rates may apply."
+        android:textColor="@color/color_light_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginRight="@dimen/margin_from_wall_32dp"
+        android:layout_marginTop="@dimen/margin_from_wall_32dp"
+        android:gravity="center_horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/img_flag"
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:id="@+id/edt_country_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:onClick="countryCallback"
+            android:text="+1"
+            android:cursorVisible="false"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/edt_phone_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:ems="10"
+            android:hint="1234567890"
+            android:inputType="phone"
+            android:maxLength="14"
+            android:paddingLeft="@dimen/margin_from_wall_4dp"
+            android:text="" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

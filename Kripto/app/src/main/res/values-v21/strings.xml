@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_post_text">Say something and surprise…</string>
+    <!--    Facebook credentials    -->
+    <string name="facebook_app_id">147659842551716</string>
+    <string name="fb_login_protocol_scheme">fb147659842551716</string>
+    <string name="username_entry">qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM0123456789</string>
+    <string name="read_file">This app needs access to your file storage so that it can read video.</string>
+
+</resources>

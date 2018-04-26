@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="gif_view">
+        <attr name="gif_src" format="string" />
+        <attr name="delay_in_millis" format="integer" />
+    </declare-styleable>
+</resources>

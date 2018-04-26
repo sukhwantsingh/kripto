@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/color_white">
+
+    <ImageView
+        android:id="@+id/img_registered_user"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/user_50"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/search_icn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/view_e_1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:onClick="goForSearch"
+        android:padding="@dimen/margin_from_wall_4dp"
+        android:src="@drawable/search_icn" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/img_registered_user"
+        android:layout_toRightOf="@+id/img_registered_user"
+        android:fontFamily="sans-serif"
+
+        android:text="Profile"
+        android:textColor="#000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/notification_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/bell_24" />
+
+        <ImageView
+            android:id="@+id/img_blue_dot_notification"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/blue_dot" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view_e_1"
+        android:layout_width="match_parent"
+        android:layout_height="0.2pt"
+        android:layout_below="@+id/txt1"
+        android:layout_marginTop="8dp"
+        android:background="#b7b7b7" />
+
+
+    <braille.kofefe.app.modules_.common_util_.SquareRoundCornerImageView
+        android:id="@+id/img_user_profile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view_e_1"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/user_75" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_user_profile"
+        android:layout_marginLeft="@dimen/margin_from_wall_8dp"
+        android:layout_marginStart="@dimen/margin_from_wall_8dp"
+        android:layout_toEndOf="@+id/img_user_profile"
+        android:layout_toLeftOf="@+id/ic_overflow_option_user_profile"
+        android:layout_toStartOf="@+id/ic_overflow_option_user_profile"
+        android:fontFamily="serif"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="@dimen/text_size_17sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/ic_overflow_option_user_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txt_name"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="13dp"
+        android:src="@drawable/dots_black" />
+
+
+    <TextView
+        android:id="@+id/txt_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_name"
+        android:layout_below="@+id/txt_name"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@+id/ic_overflow_option_user_profile"
+        android:layout_toStartOf="@+id/ic_overflow_option_user_profile"
+        android:fontFamily="serif"
+        android:paddingRight="@dimen/padding_5sp"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="@dimen/text_size_13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_joined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_name"
+        android:layout_below="@+id/txt_address"
+        android:layout_marginTop="4dp"
+        android:fontFamily="serif"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="@dimen/text_size_11sp" />
+
+    <TextView
+        android:id="@+id/btn_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/img_user_profile"
+        android:background="@drawable/rel_btn"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_5sp"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:paddingTop="@dimen/padding_5sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_15sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_follow"
+        android:layout_marginTop="@dimen/margin_from_wall_24dp"
+        android:gravity="start|left"
+        android:paddingLeft="@dimen/padding_5sp"
+        android:paddingRight="@dimen/padding_5sp"
+        android:text=""
+        android:textColor="@color/partial_black"
+        android:textSize="@dimen/text_size_15sp" />
+
+    <TextView
+        android:id="@+id/txt_social_links"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_bio"
+        android:layout_marginTop="@dimen/margin_from_wall_8dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding_5sp"
+        android:paddingRight="@dimen/padding_5sp"
+        android:text="No linked social media profiles"
+        android:textColor="@color/partial_black"
+        android:textSize="@dimen/text_size_17sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_social_links"
+        android:layout_marginTop="16dp"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:id="@+id/face_book"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/mImgFb"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:drawablePadding="10sp"
+                android:src="@drawable/fb_icn"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <ImageView
+                android:id="@+id/switch_facebook"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:src="@mipmap/green_tick"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/face_twitter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/mImgTw"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:drawablePadding="10sp"
+                android:src="@drawable/twitter_icn"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <ImageView
+                android:id="@+id/switch_twitter"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:src="@mipmap/green_tick"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/face_instagram"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/mImgIn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:drawablePadding="10sp"
+                android:src="@drawable/insta_icn"
+                android:textSize="@dimen/text_size_15sp" />
+
+
+            <ImageView
+                android:id="@+id/switch_instagram"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:src="@mipmap/green_tick"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/face_snapchat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/mImgSn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:drawablePadding="10sp"
+                android:src="@drawable/snapchat_icn"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <ImageView
+                android:id="@+id/switch_snapchat"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:src="@mipmap/green_tick"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_e_2"
+        android:layout_width="match_parent"
+        android:layout_height="0.2pt"
+        android:layout_below="@+id/linear_1"
+        android:layout_marginTop="16dp"
+        android:background="#b7b7b7" />
+
+
+</RelativeLayout>

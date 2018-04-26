@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_edit_profile">ਸੋਧ ਪ੍ਰੋਫ਼ਾਈਲ</string>
+    <string name="action_settings">ਸੈਟਿੰਗਾਂ</string>
+    <string name="action_share">ਸਾਂਝਾ ਕਰੋ</string>
+    <string name="add_post_text">ਤੁਹਾਡੇ ਦਿਮਾਗ ਤੇ ਕੀ ਹੈ?</string>
+    <string name="app_name">ਕੋਫਫੀ</string>
+</resources>

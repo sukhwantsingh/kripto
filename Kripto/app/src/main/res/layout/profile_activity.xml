@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/collapsing_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relative_wight"
+        android:paddingBottom="40dp" />
+
+    <!--
+         <TextView
+          android:id="@+id/textView2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="40dp"
+          android:layout_marginTop="@dimen/margin_from_wall_8dp"
+          android:elevation="12dp"
+          android:fontFamily="sans-serif"
+          android:text="K"
+          android:textColor="#fff"
+          android:textSize="32sp" />
+
+      <android.support.design.widget.FloatingActionButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="32dp"
+          app:backgroundTint="#dfdede"
+          app:fabSize="normal" />-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_add_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_from_wall_8dp"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="#fff"
+        app:fabSize="normal" />
+
+    <RelativeLayout
+        android:id="@+id/relative_wight"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/gray_little_dark">
+
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="0.1pt"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/img_home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="84dp"
+            android:layout_marginRight="84dp"
+            android:layout_toLeftOf="@+id/space1"
+            android:layout_toStartOf="@+id/space1"
+
+            android:padding="4dp"
+            android:src="@drawable/home_96" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="84dp"
+            android:layout_marginStart="84dp"
+            android:layout_toRightOf="@+id/space1"
+            android:padding="@dimen/margin_from_wall_8dp"
+            android:src="@mipmap/profile_24" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

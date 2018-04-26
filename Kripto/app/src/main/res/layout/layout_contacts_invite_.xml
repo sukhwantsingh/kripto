@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/color_white"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="48dp"
+            android:layout_height="?actionBarSize"
+            android:padding="@dimen/margin_from_wall_12dp"
+
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Invite Friends"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_17sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text=" Done "
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_17sp" />
+
+
+    </RelativeLayout>
+    <!-- android.support.v7.widget.RecyclerView-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1pt"
+        android:layout_marginTop="@dimen/margin_from_wall_2dp"
+        android:background="@color/gray_little_dark" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_contacts_to_invite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        tools:listitem="@layout/layout_item_contacts_invite_" />
+</LinearLayout>

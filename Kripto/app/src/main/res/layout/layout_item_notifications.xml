@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_e_1"
+        android:layout_marginTop="8dp"
+        android:text="Recent"
+        android:textAllCaps="false"
+        android:textColor="#6e6e6e"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view_e_2"
+        android:layout_width="match_parent"
+        android:layout_height="0.1pt"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="12dp"
+        android:background="#c9c9c9"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rel_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_e_2"
+        android:background="@color/color_white"
+        android:paddingBottom="@dimen/margin_from_wall_8dp">
+
+        <braille.kofefe.app.modules_.common_util_.SquareRoundCornerImageView
+            android:id="@+id/img_user_on_reacted"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_75" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_reacted_emoji"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="36dp"
+            android:src="@mipmap/sad_noti" />
+
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_user_on_reacted"
+            android:layout_marginEnd="@dimen/margin_from_wall_8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="@dimen/margin_from_wall_8dp"
+            android:layout_marginStart="@dimen/margin_from_wall_8dp"
+
+            android:layout_toEndOf="@+id/img_user_on_reacted"
+            android:layout_toLeftOf="@+id/img_user_who_reacted"
+            android:layout_toStartOf="@+id/img_user_who_reacted"
+            android:fontFamily="serif"
+            android:gravity="left|center"
+            android:singleLine="false"
+            android:text="Reacted message"
+            android:textColor="@color/partial_black" />
+
+        <TextView
+            android:id="@+id/text_decription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_from_wall_8dp"
+            android:layout_marginLeft="@dimen/margin_from_wall_8dp"
+            android:layout_marginRight="@dimen/margin_from_wall_8dp"
+            android:layout_marginStart="@dimen/margin_from_wall_8dp"
+            android:layout_marginTop="@dimen/margin_from_wall_2dp"
+            android:layout_toEndOf="@+id/img_user_on_reacted"
+            android:layout_toLeftOf="@+id/img_user_who_reacted"
+            android:layout_toStartOf="@+id/img_user_who_reacted"
+            android:text="description"
+            android:textColor="@color/partial_black"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView_reacted_n_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_name"
+            android:layout_alignStart="@+id/txt_name"
+            android:layout_below="@+id/text_decription"
+
+            android:fontFamily="serif"
+            android:singleLine="true"
+            android:text="Time"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_size_13sp" />
+
+
+        <braille.kofefe.app.modules_.common_util_.SquareRoundCornerImageView
+            android:id="@+id/img_user_who_reacted"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/user_75"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/img_user_who_reacted" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_e_22"
+        android:layout_width="match_parent"
+        android:layout_height="0.1pt"
+        android:layout_below="@+id/rel_content"
+        android:background="#c9c9c9"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

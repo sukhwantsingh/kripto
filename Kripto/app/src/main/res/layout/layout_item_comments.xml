@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_from_wall_4dp">
+
+        <braille.kofefe.app.modules_.common_util_.SquareRoundCornerImageView
+            android:id="@+id/circleImageView2"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="@dimen/margin_from_wall_4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_75" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/circleImageView2"
+            android:layout_marginLeft="@dimen/margin_from_wall_8dp"
+            android:layout_marginStart="@dimen/margin_from_wall_8dp"
+            android:layout_toEndOf="@+id/circleImageView2"
+            android:layout_toLeftOf="@+id/textView8"
+            android:layout_toRightOf="@+id/circleImageView2"
+            android:layout_toStartOf="@+id/textView8"
+            android:singleLine="true"
+            android:text="name"
+            android:textColor="@color/partial_black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_name"
+            android:layout_alignStart="@+id/txt_name"
+            android:layout_below="@+id/txt_name"
+            android:maxLength="108"
+            android:text="comment"
+            android:textColor="@color/color_black_less"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/txt_name"
+            android:singleLine="true"
+            android:text="1 minute ago"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <braille.kofefe.app.modules_.common_util_.SquareRoundCornerImageView
+            android:id="@+id/imageView4"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/circleImageView2"
+            android:scaleType="fitXY"
+            android:src="@drawable/a" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_little_dark" />
+</LinearLayout>

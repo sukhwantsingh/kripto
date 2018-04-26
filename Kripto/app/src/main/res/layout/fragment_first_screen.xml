@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_back_starting_screen"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/textView_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="181dp"
+        android:text="KOFEFE"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/margin_from_wall_32dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_from_wall_16dp"
+        android:gravity="center"
+        android:padding="@dimen/margin_from_wall_8dp"
+        android:text="Here the posts are not immediately visible to the users. The posts are shown in a cryptic form until a timer runs out." />
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/margin_from_wall_4dp"
+        android:layout_marginTop="@dimen/margin_from_wall_8dp"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="@dimen/margin_from_wall_8dp"
+        android:paddingRight="@dimen/margin_from_wall_8dp"
+        android:text="Comments"
+        android:textColor="@color/partial_black"
+        android:textSize="21dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:src="@drawable/cross_grey" />
+
+    <View
+        android:id="@+id/view_e_1"
+        android:layout_width="match_parent"
+        android:layout_height="0.2pt"
+        android:layout_below="@+id/txt1"
+        android:layout_marginLeft="@dimen/margin_from_wall_8dp"
+        android:layout_marginRight="@dimen/margin_from_wall_8dp"
+        android:layout_marginTop="8dp"
+
+        android:background="#b7b7b7" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_reactions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/edt_message_"
+        android:layout_below="@+id/view_e_1"
+        android:layout_marginLeft="@dimen/margin_from_wall_8dp"
+        android:layout_marginRight="@dimen/margin_from_wall_8dp"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/text_comment_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edt_message_"
+        android:text="0/100"
+        android:layout_marginStart="@dimen/margin_from_wall_8dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_11sp" />
+
+    <EditText
+        android:id="@+id/edt_message_"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/margin_from_wall_4dp"
+        android:layout_toLeftOf="@+id/view3"
+        android:layout_toStartOf="@+id/view3"
+        android:background="@drawable/edt_stroke"
+        android:drawableLeft="@mipmap/gallary_24"
+        android:drawablePadding="@dimen/margin_from_wall_8dp"
+        android:hint="Write a comment..."
+        android:singleLine="true"
+        android:maxLength="100"
+        android:imeOptions="actionSend"
+        android:paddingLeft="@dimen/padding_5sp"
+        android:textSize="@dimen/text_size_15sp" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0.2pt"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/btn_send"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/btn_send"
+        android:layout_toStartOf="@id/btn_send"
+        android:background="#aba9a9"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/btn_send"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/margin_from_wall_4dp"
+        android:background="@color/color_white"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="8dp"
+        android:src="@mipmap/send_24"
+        android:text="Send"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>

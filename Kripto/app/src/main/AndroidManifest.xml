@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="braille.kofefe.app">
+
+    <!-- support different screens sizes -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <!--
+        Tell the system this app requires OpenGL ES 2.0.
+        -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+
+    <application
+        android:name=".modules_.KofefeApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_alphabet_k"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_alphabet_k"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.twitter.sdk.android.core.identity.OAuthActivity" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="braille.kofefe.app.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".StartingScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".modules_.mainpostfeed.PreviewPostScreen"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".modules_.Invite_.InviteScreen"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".modules_.login_.LoginScreen"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".modules_.profile.ProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".modules_.mainpostfeed.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".modules_.notification.NotificationActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".modules_.mainpostfeed.SearchingActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".modules_.mainpostfeed.AddPostActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".modules_.reactions.ReactionsActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <service android:name=".modules_.mainpostfeed.services_.MyServiceRunning" />
+
+        <activity
+            android:name=".modules_.mainpostfeed.lock_unlock_module_.PostLockActivityList"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".modules_.profile.EditProfileScreen"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".modules_.mainpostfeed.CommentScreen"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".modules_.Invite_.InviteCodeScreen"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".modules_.Invite_.ValidatePhoneNumber"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".modules_.Invite_.MessageDetectionScreen"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".modules_.Invite_.CreateProfileScreen"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".modules_.Invite_.AddFriendsScreen"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".modules_.Invite_.InviteFriendsScreen"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".modules_.common_util_.VideoPlayScreen"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- Twitter api key for crash lytics and get login details&ndash;&gt; -->
+
+        <!--
+             <meta-data
+             android:name="com.crashlytics.ApiKey"
+             android:value="3225f5ec74807883bd2798cee3af760b93194ba6" />
+        -->
+        <!--
+             <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="29gPA4RLqNcl5zfr44eCapy39" />
+        -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD2nQDDZFqO5JP8nCMPBThLrtwaofFuztg" />
+
+        <!-- facebook app id -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".modules_.Invite_.EmailValidationScreen"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.steelkiwi.instagramhelper.InstagramLoginActivity" />
+
+
+        <receiver
+            android:name=".modules_.common_util_.SmsListener"
+            android:enabled="true">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </receiver>
+
+        <!--Start FCM   -->
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+              See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_alphabet_k" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <!--Todo: if you want to set channel id to subscribe topic -->
+        <!--    <meta-data
+                android:name="com.google.firebase.messaging.default_notification_channel_id"
+                android:value="@string/default_notification_channel_id"/>
+            -->
+        <service android:name=".supports_.fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".supports_.fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- End FCM -->
+    </application>
+
+</manifest>

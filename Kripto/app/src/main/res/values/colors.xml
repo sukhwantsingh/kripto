@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#40A7F6</color> <!-- #00c6fb-->
+    <color name="colorPrimaryDark">#005bea</color>
+    <color name="colorAccent">#77fb595e</color>
+
+
+    <!-- Different colors <color name=""> </color> -->
+    <color name="color_black">#000000</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_light_gray">#FF414162</color>
+    <color name="color_green">#006838</color>
+    <color name="app_color">#0253de</color>
+    <color name="color_gray_indicator">#dfdfdf</color>
+    <color name="color_black_less">#282828</color>
+    <color name="color_invite_text">#424e5c</color>
+    <color name="color_invite_image">#3d3d3d</color>
+
+
+    <color name="partial_black">#282828</color>
+    <color name="colorPink">#FC6076</color>
+    <color name="light_canvas_background_color">#77fb595e</color>
+
+    <color name="gray_little_dark">#F0F0F0</color>
+    <color name="gray_little_light">#FAFAFA</color>
+    <color name="color_transparent">#00ffffff</color>
+    <color name="gray_d">#FF8B8B8B</color>
+
+    <color name="medium_gray">#dcdee3</color>
+    <color name="white_80">#FFFFFF</color>
+    <color name="color_red_kofefe_noti">#FF0000</color>
+
+</resources>

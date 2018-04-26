@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context="braille.kofefe.app.modules_.Invite_.InviteScreen">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="@dimen/margin_from_wall_8dp"
+        android:layout_marginTop="18dp"
+        android:onClick="regainView"
+        android:padding="@dimen/margin_from_wall_12dp"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_from_wall_24dp"
+        android:text="KOFEFE"
+        android:textSize="@dimen/margin_from_wall_32dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/margin_from_wall_24dp"
+        android:layout_marginTop="@dimen/margin_from_wall_16dp"
+        android:text="4/5"
+        android:textColor="@color/color_black_less"
+        android:textSize="@dimen/text_size_17sp" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_back"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_from_wall_8dp">
+
+            <ViewFlipper
+                android:id="@+id/viewflipper_invite_"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:paddingLeft="@dimen/margin_from_wall_8dp"
+                android:paddingRight="@dimen/margin_from_wall_8dp"
+                android:scrollbars="none">
+
+                <include layout="@layout/layout_invite_four" />
+
+
+            </ViewFlipper>
+
+            <ImageView
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewflipper_invite_"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margin_from_wall_8dp"
+                android:layout_marginTop="53dp"
+                android:clickable="true"
+                android:elevation="6dp"
+                android:onClick="goToNext"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/fab_48" />
+
+            <requestFocus />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

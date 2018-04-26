@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <braille.kofefe.app.modules_.common_util_.SquareRoundCornerImageView
+        android:id="@+id/circleImageView2"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/user_50" />
+
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/circleImageView2"
+        android:layout_marginEnd="@dimen/margin_from_wall_8dp"
+        android:layout_marginLeft="@dimen/margin_from_wall_8dp"
+        android:layout_marginRight="@dimen/margin_from_wall_8dp"
+        android:layout_marginStart="@dimen/margin_from_wall_8dp"
+        android:layout_toEndOf="@+id/circleImageView2"
+        android:layout_toLeftOf="@+id/btn_follow"
+        android:layout_toRightOf="@+id/circleImageView2"
+        android:layout_toStartOf="@+id/btn_follow"
+        android:text="Robb Stark"
+        android:textColor="@color/color_black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_name"
+        android:layout_alignStart="@+id/txt_name"
+        android:layout_below="@+id/txt_name"
+        android:layout_marginEnd="@dimen/margin_from_wall_8dp"
+        android:layout_marginRight="@dimen/margin_from_wall_8dp"
+        android:layout_toLeftOf="@+id/btn_follow"
+        android:layout_toStartOf="@+id/btn_follow"
+        android:singleLine="true"
+        android:text="23 min ago"
+        android:textColor="@color/color_black_less"
+        android:textSize="@dimen/text_size_13sp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="@dimen/margin_from_wall_24dp"
+        android:background="@color/gray_little_dark" />
+
+    <TextView
+        android:id="@+id/btn_follow"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txt_name"
+        android:background="@drawable/rel_btn"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding_5sp"
+        android:paddingRight="@dimen/padding_5sp"
+        android:text="Following"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_15sp"
+
+        />
+
+</RelativeLayout>
